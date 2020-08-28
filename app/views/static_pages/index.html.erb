@@ -1,0 +1,11 @@
+<%= form_with url: static_pages_path, method: :get, local: true do %>
+  <%= label_tag :flickr_user_id %>
+  <%= text_field_tag :flickr_user_id %>
+  <%= submit_tag "Find Images" %>
+<% end %>
+
+<% if @urls.any? %>
+  <% @urls[0..24].each do |url| %>
+    <%= image_tag url %>
+  <% end %>
+<% end %>
