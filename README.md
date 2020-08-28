@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A project to practice working with external APIs. From [The Odin Project's](https://www.theodinproject.com/courses/ruby-on-rails/lessons/apis?ref=lnav) curriculum.
 
-Things you may want to cover:
+This project works with the Flickr API, utilizing the [Flickr gem](https://github.com/cyclotron3k/flickr)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Submitting your Flickr user id into the form will return the first 100 photos from your profile.
