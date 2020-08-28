@@ -5,7 +5,7 @@ class StaticPagesController < ApplicationController
     @urls = []
     
     if @flickr_id
-      @photos = flickr.people.getPhotos(user_id: @flickr_id)
+      @photos = flickr.people.getPhotos(user_id: @flickr_id, page: 1)
 
       @photos.each do |photo|
         photo_info = flickr.photos.getInfo(photo_id: photo.id)
